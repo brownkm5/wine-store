@@ -1,0 +1,240 @@
+
+// navbar
+.navbar {
+  padding: 15px;
+  background-color: rgb(44,	153,	214);
+
+  div {
+    display: inline-block;
+  }
+
+  .logo {
+    margin-left: 10%;
+    font-family: 'Cyclo';
+    font-size: 34px;
+    color: white;
+  }
+
+  .search {
+    vertical-align: super;
+    margin-left: 15%;
+
+    input {
+      height: inherit;
+      width: 165px;
+      letter-spacing: 1.5px;
+      font-weight: 100;
+      display: block;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+  }
+
+  .location {
+    vertical-align: super;
+
+    i {
+      font-size: 20px;
+      color: white;
+      margin-left: 15px;
+      margin-right: 5px;
+    }
+
+    .address {
+      font-size: 15px;
+      color: white;
+      border-bottom: 1.5px dashed white;
+    }
+  }
+
+  .login {
+    margin-left: 15%;
+    button {
+      box-shadow: 6px 6px 15px 2px rgb(20,	120,	170);
+      height: 40px;
+      width: 110px;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: super;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #fff;
+      background-color: rgb(146,	204,	113);
+      border-color: rgb(146,	204,	113);
+    }
+  }
+}
+//media queries for navbar
+@media (max-width: 1013px) {
+  .logo {
+    margin-left: 7% !important;
+  }
+  .search {
+    margin-left: 10% !important;
+  }
+  .login {
+    margin-left: 10% !important;
+  }
+}
+@media (max-width: 838px) {
+  .logo {
+    margin-left: 3% !important;
+  }
+  .search {
+    margin-left: 7% !important;
+    input {
+      width: 110px !important;
+    }
+  }
+  .login {
+    margin-left: 7% !important;
+  }
+}
+@media (max-width: 676px) {
+  .search, .location, .login {
+    display: none !important;
+  }
+}
+
+
+//banner
+.banner {
+  //background
+  background-image: url('../images/overlayed-wine-wall.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 350px;
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+
+  .header {
+    span {
+      display: block;
+    }
+
+    .title {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .icons {
+    font-size: 20px;
+    div {
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px 7px;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+    .map {
+      margin: 0 15px;
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+  }
+  .line {
+    width: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    margin-top: 25px;
+  }
+  .subicon {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+
+  }
+
+  .address {
+    font-weight: 100;
+  }
+}
+@media (max-width: 443px) {
+  .title {
+    font-size: 40px !important;
+  }
+}
+
+
+// midnav
+.midnav {
+  height: 70px;
+  div {
+    display: inline-block;
+  }
+  li, ul{
+    display: inline-block;
+    list-style: none;
+    // vertical-align: middle;
+  }
+  .buttons {
+    height: 100%;
+    margin-left: 8%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 25%;
+
+    .button {
+      color: #A7B0B6;
+      padding: 30px;
+      font-size: 20px;
+      font-weight: 100;
+      cursor: pointer;
+      letter-spacing: 1.5px;
+    }
+
+    .button:hover {
+      background-color: #C8C9CB;
+      color: #FF695F;
+    }
+  }
+
+  .cart {
+    width: 200px;
+    .price {
+      color: #FE6A5F;
+      font-size: 24px;
+      margin-right: 10%;
+    }
+    .cart-button {
+      box-shadow: 6px 6px 15px 2px #E8E8E8;
+      height: 40px;
+      width: 85px;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 25px;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: baseline;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #fff;
+      background-color: #FE6A5F;
+      border-color: #FE6A5F;
+    }
+  }
+}

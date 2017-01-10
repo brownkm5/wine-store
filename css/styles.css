@@ -1,0 +1,175 @@
+.navbar {
+  padding: 15px;
+  background-color: #2c99d6; }
+  .navbar div {
+    display: inline-block; }
+  .navbar .logo {
+    margin-left: 10%;
+    font-family: 'Cyclo';
+    font-size: 34px;
+    color: white; }
+  .navbar .search {
+    vertical-align: super;
+    margin-left: 15%; }
+    .navbar .search input {
+      height: inherit;
+      width: 165px;
+      letter-spacing: 1.5px;
+      font-weight: 100;
+      display: block;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+  .navbar .location {
+    vertical-align: super; }
+    .navbar .location i {
+      font-size: 20px;
+      color: white;
+      margin-left: 15px;
+      margin-right: 5px; }
+    .navbar .location .address {
+      font-size: 15px;
+      color: white;
+      border-bottom: 1.5px dashed white; }
+  .navbar .login {
+    margin-left: 15%; }
+    .navbar .login button {
+      box-shadow: 6px 6px 15px 2px #1478aa;
+      height: 40px;
+      width: 110px;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: super;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #fff;
+      background-color: #92cc71;
+      border-color: #92cc71; }
+
+@media (max-width: 1013px) {
+  .logo {
+    margin-left: 7% !important; }
+
+  .search {
+    margin-left: 10% !important; }
+
+  .login {
+    margin-left: 10% !important; } }
+@media (max-width: 838px) {
+  .logo {
+    margin-left: 3% !important; }
+
+  .search {
+    margin-left: 7% !important; }
+    .search input {
+      width: 110px !important; }
+
+  .login {
+    margin-left: 7% !important; } }
+@media (max-width: 676px) {
+  .search, .location, .login {
+    display: none !important; } }
+.banner {
+  background-image: url("../images/overlayed-wine-wall.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  text-align: center;
+  color: white;
+  padding-top: 60px; }
+  .banner .header span {
+    display: block; }
+  .banner .header .title {
+    font-size: 50px;
+    font-weight: bold; }
+  .banner .header .subtitle {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 35px; }
+  .banner .icons {
+    font-size: 20px; }
+    .banner .icons div {
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px 7px;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%; }
+    .banner .icons .map {
+      margin: 0 15px;
+      padding-left: 11px;
+      padding-right: 11px; }
+  .banner .line {
+    width: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    margin-top: 25px; }
+  .banner .subicon {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px; }
+  .banner .address {
+    font-weight: 100; }
+
+@media (max-width: 443px) {
+  .title {
+    font-size: 40px !important; } }
+.midnav {
+  height: 70px; }
+  .midnav div {
+    display: inline-block; }
+  .midnav li, .midnav ul {
+    display: inline-block;
+    list-style: none; }
+  .midnav .buttons {
+    height: 100%;
+    margin-left: 8%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 25%; }
+    .midnav .buttons .button {
+      color: #A7B0B6;
+      padding: 30px;
+      font-size: 20px;
+      font-weight: 100;
+      cursor: pointer;
+      letter-spacing: 1.5px; }
+    .midnav .buttons .button:hover {
+      background-color: #C8C9CB;
+      color: #FF695F; }
+  .midnav .cart {
+    width: 200px; }
+    .midnav .cart .price {
+      color: #FE6A5F;
+      font-size: 24px;
+      margin-right: 10%; }
+    .midnav .cart .cart-button {
+      box-shadow: 6px 6px 15px 2px #E8E8E8;
+      height: 40px;
+      width: 85px;
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 25px;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: baseline;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #fff;
+      background-color: #FE6A5F;
+      border-color: #FE6A5F; }
+
+/*# sourceMappingURL=styles.css.map */
