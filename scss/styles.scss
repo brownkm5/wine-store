@@ -199,7 +199,7 @@
     margin-left: 8%;
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 25%;
+    margin-right: 20%;
 
     .button {
       color: #A7B0B6;
@@ -244,6 +244,48 @@
     }
   }
 }
+//media queries for mid navbar
+@media (max-width: 1047px) {
+  .midnav {
+    .buttons {
+      margin-right: 10%;
+      margin-left: 4%;
+      padding-left: 0px;
+
+      .button {
+        padding: 30px 15px;
+      }
+    }
+  }
+}
+@media (max-width: 772px) {
+  .midnav {
+    .buttons {
+      margin-right: 8%;
+      margin-left: 2%;
+
+      .button {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 633px) {
+  .midnav {
+    .buttons {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .button {
+        padding: 20px 7px;
+      }
+    }
+
+    .cart {
+      display: none;
+    }
+  }
+}
 
 //shop container
 .shop {
@@ -260,8 +302,8 @@
         padding-top: 20px;
 
         img {
-          width: 180px;
-          height: 130px;
+          width: 80%;
+          // height: 130px;
         }
 
         .caption {
@@ -346,8 +388,142 @@
         }
       }
     }
+    section {
+      .thumbnail {
+        .image {
+          text-align: center;
+          cursor: pointer;
+          img {
+            height: 200px;
+          }
+        }
+        .name {
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+          margin-top: 15px;
+          margin-bottom: 10px;
+
+          p {
+            font-weight: 200;
+          }
+        }
+        .info {
+          margin-top: 15px;
+          margin-bottom: 10px;
+          .price {
+            display: inline-block;
+            margin-right: 35%;
+            margin-left: 5%;
+            span {
+              font-size: 16px;
+              color: #FF675E;
+            }
+          }
+          button {
+            box-shadow: 6px 6px 6px 2px #EAEAEA;
+            height: 35px;
+            width: 75px;
+            display: inline-block;
+            padding: 6px 12px;
+            font-size: 17px;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: baseline;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            color: #fff;
+            background-color: #FE6A5F;
+            border-color: #FE6A5F;
+          }
+        }
+      }
+    }
   }
 }
+//media queries for aside
+@media (max-width: 991px) {
+  .shop {
+    .container {
+      aside {
+        .store-bio {
+
+          img {
+            width: 100%;
+          }
+          .caption {
+            padding: 0px;
+            p {
+              font-size: 11px;
+            }
+          }
+          .popularity {
+            i {
+              margin-right: 5px;
+            }
+            font-size: 15px;
+          }
+          .contact {
+            i {
+              font-size: 15px;
+            }
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 435px) {
+  .shop {
+    .container {
+      aside {
+        .store-bio {
+
+          img {
+            width: 100%;
+          }
+          .caption {
+            padding: 0px;
+            p {
+              font-size: 8px;
+            }
+          }
+          .popularity {
+            i {
+              margin-right: 0;
+            }
+            font-size: 12px;
+          }
+          .contact {
+            i {
+              font-size: 12px;
+            }
+            span {
+              font-size: 10px;
+            }
+          }
+        }
+        .product-filter {
+          li {
+            font-size: 12px;
+            padding: 5px;
+            padding-left: 17px;
+          }
+          .active {
+            padding-left: 7px;
+            i {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 //footer
 .footer {
