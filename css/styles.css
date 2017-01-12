@@ -256,8 +256,8 @@
     .shop .container section .thumbnail .image img {
       height: 200px; }
   .shop .container section .thumbnail .name {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     margin-top: 15px;
     margin-bottom: 10px; }
     .shop .container section .thumbnail .name p {
@@ -267,8 +267,13 @@
     margin-bottom: 10px; }
     .shop .container section .thumbnail .info .price {
       display: inline-block;
-      margin-right: 35%;
-      margin-left: 5%; }
+      margin-right: 20%;
+      margin-left: 5%;
+      vertical-align: middle; }
+      .shop .container section .thumbnail .info .price .stars {
+        color: #F59B38; }
+        .shop .container section .thumbnail .info .price .stars i {
+          cursor: pointer; }
       .shop .container section .thumbnail .info .price span {
         font-size: 16px;
         color: #FF675E; }
@@ -327,7 +332,55 @@
     padding-left: 7px; }
     .shop .container aside .product-filter .active i {
       margin-right: 0px; } }
-.footer div, .footer span {
-  display: inline-block; }
+.footer {
+  min-height: 60px;
+  background-color: #33495C;
+  color: #A1A6AA;
+  padding: 15px;
+  font-weight: 100; }
+  .footer div, .footer span {
+    display: inline-block; }
+  .footer .copyright {
+    margin-right: 27%;
+    margin-left: 8%; }
+  .footer .made {
+    margin-right: 15%; }
+    .footer .made .nyc {
+      font-weight: bold;
+      font-size: 22px; }
+    .footer .made i {
+      color: #FE6A5F;
+      font-size: 22px; }
+  .footer .nav span {
+    margin-right: 25px;
+    cursor: pointer; }
+
+@media (max-width: 1115px) {
+  .footer .copyright {
+    margin-right: 20%;
+    margin-left: 10%; }
+  .footer .nav span {
+    margin-right: 20px; } }
+@media (max-width: 980px) {
+  .footer .copyright {
+    margin-right: 15%; }
+  .footer .made {
+    margin-right: 10%; } }
+@media (max-width: 834px) {
+  .footer .copyright {
+    margin-right: 10%;
+    margin-left: 5%; }
+  .footer .made {
+    margin-right: 9%; }
+  .footer .nav span {
+    margin-right: 10px; } }
+@media (max-width: 677px) {
+  .footer {
+    text-align: center; }
+    .footer .copyright {
+      display: none; }
+    .footer .made {
+      display: block;
+      margin: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
